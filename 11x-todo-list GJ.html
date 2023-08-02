@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+  
+    <title>11 todo list</title>
+	<link rel="stylesheet" href="styles/11x-todo-list.css">
+		<style>
+
+			
+		</style>
+	
+  </head>
+  
+	  <body>
+	 
+		<p>Todo list 1</p>
+	 <div class="todo-input-grid"> <!-- separate into 3 elements-->
+	 
+		<input placeholder="todo name"
+		class="js-name-input name-input"
+		onkeydown="if(event.key === 'Enter'){
+		addTodo();
+	
+}">
+		<input type = "date"
+		class="js-due-date-input due-date-input"
+		> 
+		
+		<button onclick="
+		addTodo ();
+		"
+		class="add-todo-button">Add</button>
+		
+	</div>
+	  <!--
+	  Steps (Algorithm)
+	  1.Create array to store todos
+	  2.When we click "Add",
+	  3.Get text from textbox
+	  4.Add it to array
+	  5.consoel.log()the array
+	  -->
+	  
+	  <div class="js-todo-list todo-grid">text</div> <!--put html = `<p>${todo}</p>`; iside js -->
+	  
+		<script src="scripts/11x-todo-list.js">
+		
+		</script>
+		
+	  </body>
+	  
+</html>
+
